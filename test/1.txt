@@ -1,0 +1,112 @@
+一、数据库
+  1.启动数据库 
+     mongod --dbpath 路径
+  2.连接数据库
+     mongo
+  3.查看所有数据库
+    show dbs
+  4.使用数据库
+     use 库名
+  5.显示表明
+     show collections
+  6.查询表
+     db.表名.find()
+
+二、服务器 express
+  1.安装
+    npm install express-generator -g
+  2.生成
+    express 工程名 -e  (ejs模板引擎)
+    其中app.js为入口文件（核心文件）
+  3.进入文件夹
+    cd 文件名
+  4.安装npm
+    npm install
+  5.开启服务器
+    SET DEBUG=my_express:* & npm start
+    SET DEBUG=my_express2:* & npm start
+  6.端口号为3000
+    通过localhost:3000来访问
+    如果想修改端口号 到bin中的www中修改
+
+
+
+三、mongoDB
+  增删改查
+    db.table.insert({name:"cui",age:48}) 
+
+    db.table.remove({name:"cui",{justOne:false}})
+
+    db.table.update({}.{})
+
+    db.table.find({name:"cui"})
+
+    sort排序
+    find().sort({字段名:1})
+
+    翻页
+    db.students2.find().limit(每页表示的个数).skip(页数-1*每      页表示的个数)
+    
+    例如第三页，每页表示10个
+    db.students2.find().limit(10).skip(20)
+四、模糊查询
+
+    db.table.find({name:{$regex://}})
+
+五、聚合
+  // 每个班的人数
+    db.students2.aggregate([{$group : {_id : "$class",     num_tutorial : {$sum : 1}}}])
+  // 求年龄的平均值
+    db.students2.aggregate([{$group : {_id : "$class",     num_tutorial : {$avg : "$age"}}}])
+  // 最大年龄
+    db.students2.aggregate([{$group : {_id : "$class",     num_tutorial : {$max : "$age"}}}])
+
+六、mongoose
+    表名写成单数，存到数据库中自动变成复数
+
+    var MyModel = mongoose.model('表名', mySchema);
+七、Bootstrap
+  1.查看版本
+    bower info jquery
+  2.安装(指定)版本
+    bower install jquery#1.0.1
+  3.安装bootstrap
+    bower install bootstrap
+  4.
+八、注意(文件上传)
+  1.express ajax 文件上传
+  2.jquery.form.js
+  3.multiparty (express上传文件)
+
+九、Vue脚手架的使用
+vue-cli
+  1.安装
+    npm install -g vue-cli
+  2. 生成项目
+   vue init webpack 工程名
+  3. 根据各种问题选择合适的选项
+  4. npm install
+  5. 运行项目   
+    cd my-vue-project
+    npm install
+    npm run dev
+
+十、React脚手架的安装
+  1.安装
+    npm install -g create-react-app
+  2.创建
+    create-react-app 工程名
+  3.动画组件
+    npm install react-transition-group --save
+    import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
+
+call,apply,bind的区别:
+call前面是单个的 将方法执行起来 也可修正指针
+apply前面是数组
+bind是不运行修正指针
+ffmpeg -i input.mp4 -ss 00:00:00 -t 00:01:23 -acodec copy -vcodec copy output.mp4
+
+
+this.$router.push页面跳转
+
+
