@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+main{
+	height:600px;
+	background:url(../images/75.png) no-repeat 369px,#cecece;
+	}
+main .box{
+	height:600px;
+	width:477px;
+	float:right;
+	}
+main .box>p{
+	width:76%;
+	margin-top:40px;
+	font-size:16px;
+	color:#333;
+	}
+main .box>p a{
+	font-size:16px;
+	float:right;
+	color:#333;
+	}
+main .box>p a:hover{
+	color:#ad0800;
+	}
+main .box .re{
+	
+	height:450px;
+	width:76%;
+	background:#f4f4f4;
+	text-align:center;
+	}
+main .box .re ul{
+	height:36px;
+	text-align:center;
+	display:flex;
+	}
+main .box .re ul li{
+	flex:1;
+	line-height:32px;
+	color:#7e7e7e;
+	font-size:12px;
+	box-sizing:content-box;
+	}
+main .box .re ul li:nth-child(1){
+	color:#ad0800;
+	border-bottom:4px solid #ad0800;
+	}
+main .box .re form{
+	height:350px;
+	text-align:center;
+	}
+main .box .re input{
+	width:293px;
+	height:34px;
+	border-radius:5px;
+	color:#ccc;
+	border: 1px solid #ccc;
+	margin-top:28px;
+	padding-left:13px;
+	outline:none;
+	}
+main .box .re .p1 input{
+	height:12px;
+	width:12px;
+	margin:0;	
+	}
+main .box .re .p1{
+	font-size:12px;
+	margin-top:20px;
+	}
+main .box .re a{
+	width:293px;
+	height:34px;
+	border-radius:5px;
+	color:#fff;
+	background:#333;
+	display:inline-block;
+	margin-top:11px;
+	text-align:center;
+	line-height:34px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
